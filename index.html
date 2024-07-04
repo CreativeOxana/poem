@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <script type="module" src="src/index.js"></script>
+   
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Poem Generator</title>
   </head>
   <body>
@@ -15,7 +16,7 @@
 </div>
 
   <main>
-    <form>
+    <form id="poem-generator-form">
       <input type="text" placeholder="Enter the topic of the poem"
       autofocus
       required
@@ -23,7 +24,7 @@
       class="intructions">
       
       <input type="submit" class="submit-button">
-      <div class="poem">The poem wil go here</div>
+      <div class="poem" id="poem"></div>
     </form>
   </main>
     <footer>
@@ -32,5 +33,6 @@
         >open-sourced on Github
       </a> and it is <a href="https://gregarious-faloodeh-618f78.netlify.app" target="_blank">hosted on Netlify
     </footer>
+    <script type="module" src="src/index.js"></script>
   </body>
 </html>
