@@ -4,22 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <script type="module" src="src/style.css"></script>
+    <script type="module" src="src/index.js"></script>
     <title>AI Poem Generator</title>
   </head>
   <body>
+    <div class="container">
     <header>
     <h1>AI Poem Generator</h1>
   </header>
+</div>
 
   <main>
-    <form action="">
+    <form>
       <input type="text" placeholder="Enter the topic of the poem"
       autofocus
       required
-      autocomplete="off">
-      <input type="submit">
-      <div>The poem wil go here</div>
+      autocomplete="off"
+      class="intructions">
+      
+      <input type="submit" class="submit-button">
+      <div class="poem">The poem wil go here</div>
     </form>
   </main>
     <footer>
